@@ -1,0 +1,8 @@
+def im_prime():
+    for i in range(1,10):
+        if (i%2==0):
+            print('true')
+        else:
+            print('false')
+
+im_prime()
