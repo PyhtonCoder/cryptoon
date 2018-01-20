@@ -1,0 +1,24 @@
+def earth():
+    number = int(input("Number: "))
+
+    libary = {
+        "garun": [3,4,5],
+        "amar": [6,7,8],
+        "ashun": [9,10,11],
+        "dzmer": [12,1,2],
+    }
+
+    keys=sorted(libary)
+
+    for var in keys:
+        if number in libary[var]:
+            return var
+
+    return None
+
+Earth=earth()
+
+if Earth!=None:
+    print("Result " + Earth)
+else:
+    print("[-] Input error..")
