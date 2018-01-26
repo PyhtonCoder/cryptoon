@@ -1,0 +1,32 @@
+def masive():
+    a = int(input("Ներմուծլ թիվ: "))
+
+    # Առաջին թիվը:
+    A1 = a//1000
+
+    # Երկրորդ թիվը:
+    b = a//100
+    A2 = b % 10
+
+    # Երրորդ թիվը:
+    c = a//10
+    A3 = c % 10
+
+    # Չորրորդ թիվը:
+    A4 = a%10
+
+    if A1>A2 and A1 > A3 and A1 > A4:
+        print(str("Ամենամեծ թիվը " + str(A1)))
+
+    elif A2>A1 and A2>A3 and A2>A4:
+        print(str("Ամենամեծ թիվը " + str(A2)))
+
+    elif A3>A1 and A3>A2 and A3>A4:
+        print(str("Ամենամեծ թիվը " + str(A3)))
+
+    elif A4>A1 and A4>A2 and A4>A3:
+        print(str("Ամենամեծ թիվը " + str(A4)))
+    else:
+        print("Բոլոր թվերը հավասար են:")
+
+masive()
