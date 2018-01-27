@@ -1,0 +1,16 @@
+def bank():
+
+partq = input("Ինչքան փող եք ցանկանում վերցնել: ")
+amount = int(partq)
+tokos = input("Քանի տոկոսով եք ուզում վերցնել: ")
+tokos = int(tokos)
+tari = input("Քանի տարով եք ցանկանում վերցնել: ")
+tari = float(tari)
+
+tokos = tokos / 100
+month_pay = (amount * tokos * (1 + tokos) ** tokos) / (12 * ((1 + tokos) ** tokos - 1))
+print("Ձեր ամսեկան վճարը կազմում է: %.2f" % month_pay)
+gumar = month_pay * tokos * 12
+print("Ամբողջ ընթացքում վճարելու եք: %.2f" % gumar)
+
+bank()
