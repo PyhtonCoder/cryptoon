@@ -1,0 +1,21 @@
+import os
+path = "C:/Users/Cryptoon/Desktop/Suna Cup`s"
+projectname = 'project1'
+folders = \
+    [
+        'input',
+        'output',
+        'scenes',
+        'assets'
+    ]
+
+def createFolder(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+fullPath = os.path.join(path, projectname)
+createFolder(fullPath)
+
+for f in folders:
+    folder = os.path.join(fullPath, f)
+    createFolder(folder)
