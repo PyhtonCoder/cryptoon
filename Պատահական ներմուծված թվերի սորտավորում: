@@ -1,0 +1,11 @@
+def mass():
+    massiv = []
+    length = int(input("Ներմուծեք զանգվածի տարերի քանակը "))
+    for i in range(length):
+        num = int(input("Ներմուծել թվերը "))
+        massiv.append(num)
+        massiv.sort()
+        print(massiv)
+
+
+mass()
